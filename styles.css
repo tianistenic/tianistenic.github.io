@@ -127,28 +127,38 @@ body {
 }
 
 /* Contact Data Section */
-.contact-data {
-    padding: 50px 0;
+.contact-section {
+    background-color: #d1d1d1;
+}
+.contact-data table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.contact-data table td {
+    padding: 12px;
+    border: 1px solid #ebebeb;
+}
+
+.contact-data table td strong {
+    font-weight: bold;
 }
 
 .contact-data h2 {
-    text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.contact-data ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.contact-data table tbody tr:nth-child(odd) {
+    background-color: #f0f0f0;
 }
 
-.contact-data li {
-    margin-bottom: 10px;
+.contact-data table tbody tr:hover {
+    background-color: #dfdfdf;
 }
 
-.contact-data li strong {
-    font-weight: bold;
-}
+
+
 
 /* Contact Form Section */
 .contact-form {
@@ -363,6 +373,139 @@ li {
 .contact-form button {
     width: 100%;
 }
+
+/* About Us Section */
+.about-us-section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-us-section .left-section h2 {
+    font-size: 32px;
+    color: #000000;
+}
+
+.about-us-section .right-section{
+    flex: 3;
+    text-align: center;
+}
+
+.about-us-section .right-section h2 {
+    font-size: 32px;
+    color: #d1d1d1;
+}
+
+
+.about-us-section .right-section p {
+    font-size: 18px;
+    color: #9b9b9b;
+    line-height: 1.5;
+}
+
+.about-us-section .left-section p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.about-us-section .right-section img {
+    max-width: 100%;
+    border-radius: 5px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Custom CSS for FAQ page */
+
+.faq {
+    margin-top: 50px;
+}
+
+.faq h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+}
+
+.card-header h5 {
+    margin-bottom: 0;
+}
+
+.card-body {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-top: none;
+}
+
+.card-body p {
+    margin-bottom: 0;
+}
+
+.card-body:last-child {
+    border-bottom: none;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for active accordion items */
+.card-header button[aria-expanded="true"] {
+    font-weight: bold;
+}
+
+.card-header button[aria-expanded="true"]::after {
+    content: "▲";
+    float: right;
+}
+
+.card-header button[aria-expanded="false"]::after {
+    content: "▼";
+    float: right;
+}
+
+@media (min-width: 576px) {
+    .faq {
+        margin-top: 80px;
+    }
+}
+
+/* Responsive Styles */
+
+@media (min-width: 576px) {
+    .about-us-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .about-us-section h2 {
+        font-size: 40px;
+    }
+
+    .about-us-section p {
+        font-size: 20px;
+    }
+
+    .about-us-section .left-section {
+        flex: 1;
+        padding-right: 30px;
+        margin: 0;
+    }
+}
+
 
 @media (max-width: 768px) {
     .gallery-item {
