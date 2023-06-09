@@ -7,21 +7,43 @@
 .navbar {
     min-height: 50px;
     background-color: #4e4e4e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar-brand {
-    margin-left: auto;
-    margin-right: 0;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+    color: #f8f9fa;
+}
+
+.navbar-nav {
+    margin-right: 20px;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #f8f9fa;
 }
 
 .navbar-toggler {
-    order: -1;
-    border-color: white;
+    margin-right: 1em;
 }
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
 
 /* Logo */
 .navbar-brand img {
@@ -30,8 +52,19 @@
     margin-left: 0;
 }
 
+@media (min-width: 992px) {
+    .navbar-nav {
+      display: flex;
+      justify-content: flex-end;
+      margin-left: auto;
+    }
+  }
+
 /* Font */
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -42,6 +75,10 @@ body {
 
 .slideshow {
     padding: 0;
+}
+.slideshow img {
+    filter: saturate(110%);
+    image-rendering: optimizeQuality crisp-edges;
 }
 
 .carousel-control-prev,
@@ -127,6 +164,28 @@ body {
 }
 
 /* Contact Data Section */
+.btn-primary {
+    margin-top: 12px;
+}
+
+.contact-data .first-section h2{
+    color: #3a3a3a;
+    margin-bottom: 20px;
+}
+
+.contact-data .second-section {
+    background-color: #666;
+    padding: 0 24px;
+    color: #d1d1d1;
+}
+.contact-data .second-section h2{
+    color: #3a3a3a;
+    margin-bottom: 20px;
+}
+.contact-data .second-section button {
+    margin: 12px 0;
+}
+
 .contact-section {
     padding: 15px;
     background-color: #d1d1d1;
@@ -134,7 +193,6 @@ body {
 .contact-data table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
 }
 
 .contact-data table td {
@@ -147,7 +205,7 @@ body {
 }
 
 .contact-data h2 {
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .contact-data table tbody tr:nth-child(odd) {
@@ -157,9 +215,6 @@ body {
 .contact-data table tbody tr:hover {
     background-color: #dfdfdf;
 }
-
-
-
 
 /* Contact Form Section */
 .contact-form {
@@ -196,6 +251,7 @@ body {
 
 /* Footer */
 footer {
+    margin-top: auto;
     padding: 20px 0;
     background-color: #f8f9fa;
     color: #888;
@@ -376,8 +432,22 @@ li {
 }
 
 /* About Us Section */
+.about-us-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    background-color: #1c8bbf;
+}
+
+.about-us-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
 .about-us-section {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -392,17 +462,18 @@ li {
 .about-us-section .right-section{
     flex: 3;
     text-align: center;
+    background-color: #a8a8a8;
 }
 
 .about-us-section .right-section h2 {
     font-size: 32px;
-    color: #d1d1d1;
+    color: #474747;
 }
 
 
 .about-us-section .right-section p {
     font-size: 18px;
-    color: #9b9b9b;
+    color: #6e6e6e;
     line-height: 1.5;
 }
 
@@ -426,39 +497,20 @@ li {
 }
 
 .faq h1 {
-    text-align: center;
-    margin-bottom: 30px;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.card {
+    margin-bottom: 15px;
 }
 
 .card-header {
     background-color: #f8f9fa;
 }
 
-.card-header h5 {
-    margin-bottom: 0;
-}
-
 .card-body {
     background-color: #fff;
-    border: 1px solid #dee2e6;
-    border-top: none;
-}
-
-.card-body p {
-    margin-bottom: 0;
-}
-
-.card-body:last-child {
-    border-bottom: none;
-}
-
-.card-body a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-.card-body a:hover {
-    text-decoration: underline;
 }
 
 /* Styling for active accordion items */
@@ -475,6 +527,16 @@ li {
     content: "▼";
     float: right;
 }
+
+.leafleet-container {
+    padding: 0;
+}
+
+#shapeMap {
+    width: 100%;
+    height: 200px;
+  }
+  
 
 @media (min-width: 576px) {
     .faq {
@@ -521,9 +583,6 @@ li {
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
-    .navbar-toggler {
-        order: -1;
-    }
 
     .navbar-brand img {
         max-width: 80px;

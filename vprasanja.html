@@ -7,62 +7,66 @@
     <title>Euromontaža - Ljubljana</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" alt="Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Domov</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="onas.html">O nas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="vprasanja.html">Pogosta vprasanja</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="galerija.html">Galerija</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Kontakt</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="reference.html">Seznam Referenc</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Domov</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="onas.html">O nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vprasanja.html">Pogosta vprasanja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galerija.html">Galerija</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reference.html">Seznam Referenc</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <section class="container faq">
         <h1>Pogosta vprašanja</h1>
-    
+
         <div class="accordion" id="accordionFAQ">
-    
+
             <div class="card">
                 <div class="card-header" id="headingOne">
                     <h5 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                            aria-expanded="true" aria-controls="collapseOne">
+                        <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             Kakšne storitve ponujate?
                         </button>
                     </h5>
                 </div>
-    
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFAQ">
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
                     <div class="card-body">
                         Ponujamo širok spekter storitev vključno z montažo, popravili in vzdrževanjem različnih vrst
                         opreme in konstrukcij. Naša specializacija vključuje montažo strešnih kritin, fasad, stavbnega
@@ -70,34 +74,34 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             Kakšni so vaši delovni časi?
                         </button>
                     </h5>
                 </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQ">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
                     <div class="card-body">
                         Naša pisarna je odprta od ponedeljka do petka med 8:00 in 16:00 uro. Za nujne primere smo na
                         voljo tudi izven delovnega časa.
                     </div>
                 </div>
             </div>
-    
+
             <div class="card">
                 <div class="card-header" id="headingThree">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             Kako lahko stopim v stik z vami?
                         </button>
                     </h5>
                 </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFAQ">
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
                     <div class="card-body">
                         Za kontaktiranje nas lahko pokličete na telefonsko številko 01 7554 705 ali pa nam pišete na
                         e-pošto info@euromontaza.si. Prav tako lahko izpolnite obrazec na tej spletni strani in se
@@ -105,9 +109,9 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- Add more questions and answers here -->
-    
+
         </div>
     </section>
 
@@ -117,11 +121,6 @@
             Vse informacije, teksti in podobe na spletnem mestu so predmet avtorske zaščite ter drugih oblik zaščite
             intelektualne lastnine.</p>
     </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
