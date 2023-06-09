@@ -1,0 +1,432 @@
+/* Custom Styles */
+* {
+    margin: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    min-height: 50px;
+    background-color: #4e4e4e;
+}
+
+.navbar-brand {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.navbar-toggler {
+    order: -1;
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Logo */
+.navbar-brand img {
+    max-width: 100px;
+    height: auto;
+    margin-left: 0;
+}
+
+/* Font */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Image Slideshow */
+.carousel-item img {
+    height: auto;
+}
+
+.slideshow {
+    padding: 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    background-color: #36c6f4;
+    transition: background-color 0.3s;
+    position: absolute;
+    height: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #1c8bbf;
+}
+
+.carousel-control-prev::before,
+.carousel-control-next::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    position: absolute;
+}
+
+.carousel-control-prev::before {
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%) rotate(225deg);
+}
+
+.carousel-control-next::before {
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: none;
+}
+
+/* About Me Section */
+.about-section {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+}
+
+.left-section {
+    flex: 2;
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.right-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #4e4e4e;
+    text-align: center;
+}
+
+.left-section h2,
+.left-section p {
+    color: #333333;
+    font-weight: light;
+}
+
+.right-section p {
+    color: #ffffff;
+}
+
+.right-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Contact Data Section */
+.contact-data {
+    padding: 50px 0;
+}
+
+.contact-data h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-data ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-data li {
+    margin-bottom: 10px;
+}
+
+.contact-data li strong {
+    font-weight: bold;
+}
+
+/* Contact Form Section */
+.contact-form {
+    padding: 50px 0;
+    background-color: #36c6f4;
+    color: white;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    color: #888;
+    font-weight: lighter;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* Responsive Styles */
+
+/* Extra small screens */
+@media (max-width: 576px) {
+
+    .left-section,
+    .right-section {
+        flex: auto;
+    }
+
+    .left-section,
+    .right-section {
+        padding: 10px;
+    }
+
+    .carousel-control-prev::before {
+        right: -30%;
+    }
+
+    .carousel-control-next::before {
+        left: 30%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 30px;
+    }
+
+    .contact-section form {
+        max-width: 100%;
+    }
+}
+
+/* Additional Styles for Gallery Page */
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    position: relative;
+    flex-basis: calc(33.3% - 20px);
+    margin: 10px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    opacity: 1;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.references-section {
+    padding: 50px 0;
+}
+
+.references-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reference-item {
+    margin-bottom: 40px;
+}
+
+.reference-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Detailed List */
+dl {
+    margin: 0;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Contact Data Section */
+.contact-data {
+    padding: 50px 0;
+}
+
+.contact-data h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-data ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-data li {
+    margin-bottom: 10px;
+}
+
+.contact-data li strong {
+    font-weight: bold;
+}
+
+/* Contact Form Section */
+.contact-form {
+    padding: 50px 0;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-item {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .navbar-toggler {
+        order: -1;
+    }
+
+    .navbar-brand img {
+        max-width: 80px;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 769px) and (max-width: 992px) {
+    .left-section {
+        flex: 1;
+    }
+
+    .right-section {
+        flex: 1;
+    }
+}
+
+/* Large screens */
+@media (min-width: 993px) and (max-width: 1200px) {
+
+    .left-section {
+        flex: 2;
+    }
+
+    .right-section {
+        flex: 1;
+    }
+
+    .contact-section form {
+        max-width: 400px;
+    }
+
+}
+
+/* Extra large screens */
+@media (min-width: 1201px) {
+
+    .left-section {
+        flex: 3;
+    }
+
+    .right-section {
+        flex: 2;
+    }
+
+    .contact-section form {
+        max-width: 600px;
+    }
+
+}
