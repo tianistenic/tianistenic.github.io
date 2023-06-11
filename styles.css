@@ -490,7 +490,7 @@ li {
     object-fit: cover;
 }
 
-/* Custom CSS for FAQ page */
+/* FAQ page */
 
 .faq {
     margin-top: 50px;
@@ -513,7 +513,7 @@ li {
     background-color: #fff;
 }
 
-/* Styling for active accordion items */
+/* Accordion items */
 .card-header button[aria-expanded="true"] {
     font-weight: bold;
 }
