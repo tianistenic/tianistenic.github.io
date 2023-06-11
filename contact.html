@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Euromontaža - Ljubljana</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -14,13 +14,14 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
-    <!-- Custom CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
+        <!-- Navigacija -->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo.png" alt="Logo">
@@ -53,6 +54,7 @@
             </div>
         </nav>
     </header>
+    <!-- Kontaktni podatki -->
     <section class="container contact-data">
         <div class="row">
             <div class="col-md-6 first-section">
@@ -86,6 +88,7 @@
                     </tbody>
                 </table>
             </div>
+            <!-- Kontakt forma -->
             <div class="col-md-6 second-section">
                 <h2>Kontaktirajte nas</h2>
                 <form>
@@ -106,10 +109,11 @@
             </div>
         </div>
     </section>
+    <!-- Leafleet map -->
     <div class="leaflet-map container" id="shapeMap"></div>
     <!-- Footer -->
     <footer class="container-fluid bg-light text-center">
-        <p>&copy; Avtorske pravice © 2015 EUROMONTAŽA d.o.o. Vse pravice pridržane.
+        <p>&copy; Avtorske pravice © 2023 EUROMONTAŽA d.o.o. Vse pravice pridržane.
             Vse informacije, teksti in podobe na spletnem mestu so predmet avtorske zaščite ter drugih oblik zaščite
             intelektualne lastnine.</p>
     </footer>
